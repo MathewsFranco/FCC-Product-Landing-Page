@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Anton", sans-serif;
+}
+
+header {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  width: 100%;
+  background-color: khaki;
+}
+#logo {
+  display: flex;
+  align-items: flex-end;
+}
+#header-img {
+  max-height: 90px;
+}
+#logo-name {
+  font-family: "Lobster", cursive;
+  font-size: 40px;
+}
+.nav-link {
+  margin-right: 20px;
+  text-decoration: none;
+}
+#video {
+  margin-top: 100px;
+  align-content: center;
+}
