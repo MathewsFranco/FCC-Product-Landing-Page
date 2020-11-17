@@ -2,34 +2,137 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Anton", sans-serif;
+  font-family: "Inknut Antiqua", serif;
 }
-
+body {
+  background-color: #dd4637;
+  color: #412a25;
+}
 header {
   position: fixed;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 90px;
+  height: 80px;
   width: 100%;
-  background-color: khaki;
+  background-color: #dd4637;
 }
+
 #logo {
   display: flex;
   align-items: flex-end;
 }
 #header-img {
-  max-height: 90px;
+  max-height: 80px;
 }
 #logo-name {
   font-family: "Lobster", cursive;
   font-size: 40px;
 }
+a:link,
+a:visited {
+  color: #412a25;
+  padding: 7px;
+  margin: 10px;
+  border: 1px solid#412A25;
+}
+#nav-bar {
+  height: 100%;
+  display: flex;
+}
+
 .nav-link {
-  margin-right: 20px;
   text-decoration: none;
 }
-#video {
-  margin-top: 100px;
-  align-content: center;
+#more-info {
+  text-align: center;
+  font-size: 25px;
+  margin: 200px 20%;
+}
+#video-sec {
+  margin-top: 200px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+#pricing {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.basic,
+.full,
+.intern {
+  border: 1px solid rgb(0, 0, 0);
+  padding: 10px;
+  width: 200px;
+  height: 350px;
+  margin: 15px;
+  margin-bottom: 190px;
+  margin-top: 190px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+}
+button {
+  background-color: #412a25;
+  color: #dd4637;
+  border: none;
+  outline: none;
+}
+
+#about-us {
+  display: flex;
+  border: 1px solid rgb(0, 0, 0);
+  width: 680px;
+  height: auto;
+  padding: 10px;
+  margin: auto;
+  align-items: center;
+}
+#about-us-img {
+  display: block;
+  max-width: 30%;
+  height: auto;
+  margin-right: 30px;
+}
+#form {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+#email {
+  left: 60px;
+}
+@media (max-width: 700px) {
+  #more-info {
+    text-align: center;
+    font-size: 18px;
+    margin: 200px 20%;
+  }
+  #video-sec {
+    margin-top: 200px;
+    margin-bottom: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    width: 480px;
+  }
+  #pricing {
+    flex-direction: column;
+    align-items: center;
+  }
+  .basic,
+  .full,
+  .intern {
+    margin: 10px;
+  }
+  #about-us {
+    margin: auto;
+    width: 450px;
+    font-size: 12px;
+  }
 }
